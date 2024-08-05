@@ -27,7 +27,7 @@ export type GravatarProfile = {
 	currentLocation: string;
 	aboutMe: string;
 	accounts: Account[];
-  emails: Email[];
+	emails: Email[];
 };
 
 export type GravatarProfileResponse = {
