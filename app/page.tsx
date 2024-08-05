@@ -13,7 +13,7 @@ export type BlogPost = {
 	date: string;
 };
 
-export const getIcon = (name: AccountShortName) => {
+const getIcon = (name: AccountShortName) => {
 	switch (name) {
 		case "github":
 			return <FaGithub size={30} className="mr-3 mb-3" />;
