@@ -2,3 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  @apply h-full w-full;
+}
+
+body {
+  @apply h-screen text-gray-900 dark:text-gray-50 p-10;
+}
+
+h1, h2, h3, h4, p {
+  @apply mb-3;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-xl font-bold;
+}
+
+h4 {
+  @apply text-lg font-bold;
+}
+
+p {
+  @apply text-base;
+}
+
+li {
+  @apply mb-2;
+}
+
+a {
+  @apply text-blue-950 dark:text-blue-300;
+}
+
+a:hover {
+  @apply text-blue-800 dark:text-blue-400 transition-colors;
+}
+
+span {
+  @apply text-red-700 dark:text-red-300 block text-sm;
+}
+
+img {
+  @apply rounded-xl shadow-xl mb-4 mr-4;
+}
+
+aside {
+  @apply mb-6;
+}
