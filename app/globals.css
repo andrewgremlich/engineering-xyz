@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply h-screen text-gray-900 dark:text-gray-50 p-10;
+  @apply h-full text-gray-900 dark:text-gray-50 p-10;
 }
 
 h1, h2, h3, h4, p {
