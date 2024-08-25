@@ -18,7 +18,7 @@ export default async function Home() {
 					quality={100}
 				/>
 				<div className="w-full h-full relative bg-blue-300/60 dark:bg-blue-950/80 z-10" />
-				<div className="w-full h-32 absolute bottom-0 bg-gradient-to-t from-slate-900 to-transparent md:rounded-xl" />
+				<div className="w-full h-32 absolute bottom-0 bg-gradient-to-t from-slate-900 to-transparent" />
 			</div>
 
 			<div className="max-w-prose w-full md:m-auto relative -top-28 z-20 p-4">
