@@ -14,7 +14,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en-US">
 			<body className="gradient">{children}</body>
 		</html>
 	);

@@ -1,24 +1,33 @@
+import Image from "next/image";
+
 import { RecentBlogs } from "@/components/RecentBlogs";
 import { GravatarProfile } from "@/components/GravatarProfile";
 import { GravatarAccounts } from "@/components/GravatarAccounts";
 import { Availability } from "@/components/Availability";
-import { Contact } from "@/components/Contact";
 import { RecentGithubProjects } from "@/components/RecentGithubProjects";
 
 export default async function Home() {
 	return (
-		<main className="h-full">
-			<div className="md:flex md:justify-center md:items-center ">
-				<div className="md:max-w-prose md:pr-10 overflow-y-scroll">
-					<GravatarProfile />
-					<Availability />
-					<RecentGithubProjects />
-				</div>
+		<main>
+			<div className="w-full relative h-48 md:h-72">
+				<Image
+					src="/wasatch_pano.jpeg"
+					alt="Wasatch Mountain Range"
+					fill={true}
+					className="object-cover relative z-0 md:rounded-xl"
+					quality={100}
+				/>
+				<div className="w-full h-full relative bg-blue-950/80 z-10 md:rounded-xl" />
+				<div className="w-full h-32 absolute bottom-0 bg-gradient-to-t from-slate-900 to-transparent md:rounded-xl" />
+			</div>
 
-				<div>
+			<div className="max-w-prose w-full md:m-auto relative -top-28 z-20 p-4">
+				<GravatarProfile />
+				<Availability />
+				<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					<RecentGithubProjects />
 					<GravatarAccounts />
 					<RecentBlogs />
-					<Contact />
 				</div>
 			</div>
 		</main>

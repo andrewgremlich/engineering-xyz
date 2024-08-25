@@ -1,9 +1,9 @@
 .gradient {
   position: relative;
   background-image: linear-gradient(
-    to bottom right,
+    to bottom,
     #173056,
-    #020b19
+    #031128
   );
   z-index: 1;
 }
@@ -16,8 +16,8 @@
   bottom: 0;
   left: 0;
   background-image: linear-gradient(
-    to bottom right,
-    #081a35,
+    to bottom,
+    #173056,
     #020b19
   );
   z-index: -1;
@@ -32,7 +32,7 @@
 @media (prefers-color-scheme: light) {
   .gradient {
     background-image: linear-gradient(
-      to bottom right,
+      to bottom,
       #75b8ef,
       #5797cc
     );
@@ -40,9 +40,9 @@
 
   .gradient::before {
     background-image: linear-gradient(
-      to bottom right,
-      #4ca2e8,
-      #3287cc
+      to bottom,
+      #75b8ef,
+      #5797cc
     );
   }
 }

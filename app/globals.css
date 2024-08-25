@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply box-border m-0 p-0;
+}
+
 body {
-  @apply h-full text-gray-900 dark:text-gray-50 p-10;
+  @apply text-gray-900 dark:text-gray-50 bg-slate-100 dark:bg-slate-900;
 }
 
 h1, h2, h3, h4, p {
-  @apply mb-3;
+  @apply mb-3 subpixel-antialiased;
 }
 
 h1 {
@@ -44,12 +48,4 @@ a:hover {
 
 span {
   @apply text-red-700 dark:text-red-300 block text-sm;
-}
-
-img {
-  @apply rounded-xl shadow-xl mb-4 mr-4;
-}
-
-aside {
-  @apply mb-6;
 }
