@@ -14,7 +14,7 @@ export const GravatarProfile = async () => {
 					alt="Profile picture of Andrew Gremlich"
 					width={400}
 					height={400}
-					className="rounded-full border-8 p-1 border-slate-700 w-40 animate-slideIn animate-fadeIn mr-8 mb-10 md:mb-0"
+					className="rounded-full border-8 p-1 border-slate-500 dark:border-slate-100 w-40 animate-slideIn animate-fadeIn mr-8 mb-10 md:mb-0"
 				/>
 				<div>
 					<h1>{gravatar.displayName}</h1>
