@@ -6,7 +6,7 @@ export const RecentGithubProjects = async () => {
 	const pinnedRepos = await ghPinnedRepos("andrewgremlich");
 
 	return (
-		<aside>
+		<aside className="mb-5">
 			<h2>Github Projects</h2>
 			{pinnedRepos.map((repo) => (
 				<div key={randomUUID()}>

@@ -24,15 +24,14 @@ export default async function Home() {
 			<div className="max-w-prose w-full md:m-auto relative -top-28 z-20 p-16 bg-gradient-to-t from-slate-100 dark:from-slate-900 to-transparent">
 				<GravatarProfile />
 				<Availability />
-				<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-					<RecentGithubProjects />
-					<GravatarAccounts />
-					<RecentBlogs />
-				</div>
+
+				<RecentGithubProjects />
+				<GravatarAccounts />
+				<RecentBlogs />
 			</div>
 		</main>
 	);
 }
-3
+3;
 // some fancy canvas animation, or animation of elements
 // privacy policy and termos of service URL
