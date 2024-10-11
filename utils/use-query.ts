@@ -5,6 +5,7 @@ import type {
 
 export type BlogPost = {
   title: string;
+  description: string;
   url: string;
   date: string;
 };

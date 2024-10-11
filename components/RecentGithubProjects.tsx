@@ -7,14 +7,17 @@ export const RecentGithubProjects = async () => {
 
 	return (
 		<aside className="mb-10">
-			<h2>Github Projects</h2>
+			<h2>Passion Projects</h2>
 			{pinnedRepos.map((repo) => (
 				<div key={randomUUID()}>
 					<p>
-						<a href={repo.url} target="_blank" rel="noopener noreferrer">
-							{repo.repo}
-						</a>
+						<b>
+							<a href={repo.url} target="_blank" rel="noopener noreferrer">
+								{repo.repo}
+							</a>
+						</b>
 					</p>
+					<p>{repo.description}</p>
 				</div>
 			))}
 		</aside>

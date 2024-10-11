@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import { useBlogPosts } from "@/utils/use-query";
 
 export const RecentBlogs = async () => {
@@ -6,15 +8,18 @@ export const RecentBlogs = async () => {
 	return (
 		<aside className="mb-10">
 			<h2>Recent Blogs</h2>
-			<ul>
-				{blogPosts.slice(0, 4).map((post) => (
-					<li key={post.url}>
-						<a target="_blank" rel="noreferrer" href={post.url}>
-							{post.title}
-						</a>
-					</li>
-				))}
-			</ul>
+			{blogPosts.slice(0, 4).map((post) => (
+				<div key={post.url}>
+					<p>
+						<b>
+							<a target="_blank" rel="noreferrer" href={post.url}>
+								{post.title}
+							</a>
+						</b>
+					</p>
+					<p>{post.description}</p>
+				</div>
+			))}
 		</aside>
 	);
 };

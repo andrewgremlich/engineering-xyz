@@ -3,8 +3,9 @@ import Image from "next/image";
 import { RecentBlogs } from "@/components/RecentBlogs";
 import { GravatarProfile } from "@/components/GravatarProfile";
 import { GravatarAccounts } from "@/components/GravatarAccounts";
-import { Availability } from "@/components/Availability";
+// import { Availability } from "@/components/Availability";
 import { RecentGithubProjects } from "@/components/RecentGithubProjects";
+import { ProfessionalProjects } from "@/components/ProfessionalProjects";
 
 export default async function Home() {
 	return (
@@ -12,6 +13,7 @@ export default async function Home() {
 			<div className="w-full relative h-48 md:h-72">
 				<Image
 					src="/wasatch_pano.jpeg"
+					priority={true}
 					alt="Wasatch Mountain Range"
 					fill={true}
 					className="object-cover relative z-0 animate-fadeIn"
@@ -23,10 +25,11 @@ export default async function Home() {
 
 			<div className="max-w-prose w-full md:m-auto relative -top-28 z-20 p-16 bg-gradient-to-t from-slate-100 dark:from-slate-900 to-transparent">
 				<GravatarProfile />
-				<Availability />
-
-				<RecentGithubProjects />
 				<GravatarAccounts />
+				{/* <Availability /> */}
+
+				<ProfessionalProjects />
+				<RecentGithubProjects />
 				<RecentBlogs />
 			</div>
 		</main>
