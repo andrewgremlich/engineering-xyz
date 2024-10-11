@@ -4,7 +4,7 @@ export const RecentBlogs = async () => {
 	const blogPosts = await useBlogPosts();
 
 	return (
-		<aside className="mb-5">
+		<aside className="mb-10">
 			<h2>Recent Blogs</h2>
 			<ul>
 				{blogPosts.slice(0, 4).map((post) => (

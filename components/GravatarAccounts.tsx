@@ -18,7 +18,7 @@ export const GravatarAccounts = async () => {
 	const gravatar = await useGravatarProfile();
 
 	return (
-		<aside className="mb-5">
+		<aside className="mb-10">
 			<h2>Accounts</h2>
 			<ul>
 				{gravatar.accounts.map((account) => (
