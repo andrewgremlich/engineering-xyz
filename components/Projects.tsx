@@ -1,19 +1,9 @@
 import { randomUUID } from "node:crypto";
 
-interface Portfolio {
-	title: string;
-	description: string;
-	url: string;
-	date: string;
-	url_resource: string;
-	package?: string;
-}
+import { useProjects } from "@/utils/use-query";
 
 export const Projects = async () => {
-	const portfolioResponse = await fetch(
-		"https://gremlich.me/portfolio/index.json",
-	);
-	const portfolio: Portfolio[] = await portfolioResponse.json();
+	const portfolio = await useProjects();
 
 	return (
 		<aside className="mb-10">

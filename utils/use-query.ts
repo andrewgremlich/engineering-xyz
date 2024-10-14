@@ -43,3 +43,27 @@ export const useBlogPosts = async (): Promise<BlogPost[]> => {
 
   return blogPostsJson;
 };
+
+interface Portfolio {
+  title: string;
+  description: string;
+  url: string;
+  date: string;
+  url_resource: string;
+  package?: string;
+}
+
+export const useProjects = async (): Promise<Portfolio[]> => {
+  if (cache.has("projects")) {
+    return cache.get("projects");
+  }
+
+  const portfolioResponse = await fetch(
+    "https://gremlich.me/portfolio/index.json"
+  );
+  const portfolio: Portfolio[] = await portfolioResponse.json();
+
+  cache.set("projects", portfolio);
+
+  return portfolio;
+};
