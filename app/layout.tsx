@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Andrew Gremlich | Software Engineer",
-	description: "Software Engineer consultancy services.",
+	description: "The portfolio website of Andrew Gremlich, a software engineer.",
 };
 
 export default function RootLayout({
