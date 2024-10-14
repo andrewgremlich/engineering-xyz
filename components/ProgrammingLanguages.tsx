@@ -22,6 +22,7 @@ import {
 	SiDocker,
 	SiTailwindcss,
 	SiAmazonwebservices,
+	SiNx,
 } from "react-icons/si";
 
 export const ProgrammingLanguages = async () => {
@@ -42,6 +43,7 @@ export const ProgrammingLanguages = async () => {
 					{ icon: SiNestjs, label: "NestJS" },
 					{ icon: SiDeno, label: "Deno" },
 					{ icon: SiNodedotjs, label: "Node.js" },
+					{ icon: SiNx, label: "Nx" },
 					{ icon: SiRust, label: "Rust" },
 					{ icon: SiAwsamplify, label: "AWS Amplify" },
 					{ icon: SiAwslambda, label: "AWS Lambda" },
