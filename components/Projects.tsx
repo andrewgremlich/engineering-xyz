@@ -1,5 +1,3 @@
-"use client";
-
 import { randomUUID } from "node:crypto";
 
 interface Portfolio {
