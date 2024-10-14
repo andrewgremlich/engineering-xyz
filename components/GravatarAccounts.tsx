@@ -6,9 +6,9 @@ import { useGravatarProfile } from "@/utils/use-query";
 const getIcon = (name: AccountShortName) => {
 	switch (name) {
 		case "github":
-			return <FaGithub size={30} className="mr-3 mb-3" />;
+			return <FaGithub size={18} className="mr-3" />;
 		case "stackoverflow":
-			return <FaStackOverflow size={30} className="mr-3 mb-3" />;
+			return <FaStackOverflow size={18} className="mr-3" />;
 		default:
 			return null;
 	}
@@ -23,7 +23,7 @@ const AdditionalAccounts = () => {
 				rel="noreferrer"
 				href="https://www.linkedin.com/in/andrewgremlich/"
 			>
-				<FaLinkedin size={30} className="mr-3 mb-3" /> LinkedIn
+				<FaLinkedin size={18} className="mr-3" /> LinkedIn
 			</a>
 		</li>
 	);
@@ -34,10 +34,9 @@ export const GravatarAccounts = async () => {
 
 	return (
 		<aside className="mb-10">
-			<h2>Accounts</h2>
-			<ul>
+			<ul className="flex">
 				{gravatar.accounts.map((account) => (
-					<li key={account.url}>
+					<li key={account.url} className="mr-6">
 						<a
 							className="flex align-middle"
 							target="_blank"
