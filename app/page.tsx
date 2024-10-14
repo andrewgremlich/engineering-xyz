@@ -4,8 +4,7 @@ import { RecentBlogs } from "@/components/RecentBlogs";
 import { GravatarProfile } from "@/components/GravatarProfile";
 import { GravatarAccounts } from "@/components/GravatarAccounts";
 // import { Availability } from "@/components/Availability";
-import { RecentGithubProjects } from "@/components/RecentGithubProjects";
-import { ProfessionalProjects } from "@/components/ProfessionalProjects";
+import { Projects } from "@/components/Projects";
 
 export default async function Home() {
 	return (
@@ -28,8 +27,7 @@ export default async function Home() {
 				<GravatarAccounts />
 				{/* <Availability /> */}
 
-				<ProfessionalProjects />
-				<RecentGithubProjects />
+				<Projects />
 				<RecentBlogs />
 			</div>
 		</main>
