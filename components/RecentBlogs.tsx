@@ -12,7 +12,7 @@ export const RecentBlogs = async () => {
 				<div key={post.url}>
 					<p>
 						<b>
-							<a target="_blank" rel="noreferrer" href={post.url}>
+							<a target="_blank" rel="noreferrer" href={`https://gremlich.me${post.url}`}>
 								{post.title}
 							</a>
 						</b>
