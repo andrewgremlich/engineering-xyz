@@ -34,7 +34,7 @@ export const GravatarAccounts = async () => {
 
 	return (
 		<aside className="mb-10">
-			<ul className="flex">
+			<ul className="flex flex-wrap">
 				{gravatar.accounts.map((account) => (
 					<li key={account.url} className="mr-6">
 						<a

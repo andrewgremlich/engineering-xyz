@@ -23,7 +23,7 @@ export default async function Home() {
 				<div className="w-full h-32 absolute bottom-0 bg-gradient-to-t from-emerald-900 to-transparent" />
 			</div>
 
-			<div className="max-w-prose w-full md:m-auto relative -top-28 z-20 p-16 bg-gradient-to-t from-emerald-100 dark:from-emerald-900 to-transparent rounded-b-2xl">
+			<div className="sm:max-w-full md:max-w-prose w-full md:m-auto p-6 md:p-16 relative -top-28 z-20 bg-gradient-to-t from-emerald-100 dark:from-emerald-900 to-transparent rounded-b-2xl">
 				<GravatarProfile />
 				<GravatarAccounts />
 				<ProgrammingLanguages />

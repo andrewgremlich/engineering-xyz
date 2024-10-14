@@ -24,8 +24,11 @@ import {
 	SiAmazonwebservices,
 	SiNx,
 } from "react-icons/si";
+import { useWindowSize } from "rooks";
 
 export const ProgrammingLanguages = async () => {
+	// const { innerWidth } = useWindowSize();
+
 	return (
 		<aside className="mb-10">
 			<div className="flex flex-wrap justify-center">
@@ -45,22 +48,22 @@ export const ProgrammingLanguages = async () => {
 					{ icon: SiNodedotjs, label: "Node.js" },
 					{ icon: SiNx, label: "Nx" },
 					{ icon: SiRust, label: "Rust" },
-					{ icon: SiAwsamplify, label: "AWS Amplify" },
-					{ icon: SiAwslambda, label: "AWS Lambda" },
+					{ icon: SiAwsamplify, label: "Amplify" },
+					{ icon: SiAwslambda, label: "Lambdas" },
 					{ icon: SiFirebase, label: "Firebase" },
-					{ icon: SiAmazonwebservices, label: "Amazon Web Services" },
+					{ icon: SiAmazonwebservices, label: "AWS" },
 					{ icon: SiPostgresql, label: "PostgreSQL" },
 					{ icon: SiPrisma, label: "Prisma" },
 					{ icon: SiPlaywright, label: "Playwright" },
 					{ icon: SiDocker, label: "Docker" },
 				].map(({ icon: Icon, label }) => (
-					<div key={randomUUID()} className="m-6">
+					<div key={randomUUID()} className="m-2 md:m-6">
 						<figure
 							className="flex flex-col items-center"
 							aria-labelledby={`label-${label}`}
 						>
-							<Icon size={32} className="mb-2" aria-hidden="true" />
-							<figcaption id={`label-${label}`} className="w-full text-sm">
+							<Icon size={32} className="mb-2 w-5 md:w-10" aria-hidden="true" />
+							<figcaption id={`label-${label}`} className="w-full text-sm text-center">
 								{label}
 							</figcaption>
 						</figure>
