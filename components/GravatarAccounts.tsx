@@ -21,7 +21,7 @@ const AdditionalAccounts = () => {
 				className="flex align-middle"
 				target="_blank"
 				rel="noreferrer"
-				href="https://www.linkedin.com/in/andrewgremlich/"
+				href="https://www.linkedin.com/in/agremlich/"
 			>
 				<FaLinkedin size={18} className="mr-3" /> LinkedIn
 			</a>
